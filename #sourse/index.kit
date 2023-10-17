@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+   <html lang="ru">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+	   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,700;0,800;1,400&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+         <title>Оформление бровей</title>
+      </head>
+   <body class="wrapper">
+      <header class='header'>
+            <div class="header__container _container">
+               <div class="header__contact contact">
+                  <!-- @include "../blocks/contact.html" -->
+               </div>
+               <nav class="header__menu menu">
+                  <!-- @include "../blocks/nav-list.html" -->
+                  <!-- @include "../blocks/social.html" -->
+                  <a class='header__button button button--large' href='#record'>Записаться онлайн</a>
+               </nav>
+               <div class="menu__icon">
+                  <span></span>
+               </div>
+            </div>
+      </header>
+      <main>
+         <div class='container--dark container-image'>
+            <h1 class='vissually-hidden'>Оформление и долговременная укладка бровей</h1>
+            <section id='main' class='offer _section'>
+               <!-- @include "../blocks/offer.html" -->
+            </section>
+         </div>
+         <div class='container--light'>
+            <section id='blog' class='blog _section'>
+               <!-- @include "../blocks/article.html" -->
+            </section>
+         </div>
+         <div class="container--dark">
+            <section class='banner _section '>
+               <p class='banner__headline headline'>С заботой о вас</p>
+               <h2 class='banner__title title'>Наше пространство</h2>
+               <!-- @include "../blocks/advant.html" -->
+            </section>
+         </div>
+         <div class="container--light">
+            <section id='servises' class='price _section'>
+               <p class='price__headline headline'>Творческое мастерство и непревзойденное гостеприимство</p>
+               <h2 class='price__title title'>Услуги и цены</h2>
+               <div class='price-list'>
+                  <div class='price-list__column'><img class="price-list__img" src="img/1.jpg" width="" height=""></div>
+                  <div class="price-list__column">
+                     <div class='price-list__row'>
+                        <dt>Коррекция воском</dt>
+                        <dd>1000р р.</dd>
+                     </div>
+                     <div class='price-list__row'>
+                        <dt>Коррекция пинцетом</dt>
+                        <dd>1000 р.</dd>
+                     </div>
+                     <div class='price-list__row'>
+                        <dt>Тиддинг</dt>
+                        <dd>200 р.</dd>
+                     </div>
+                  </div>
+               </div>
+               <div class='price-list price-list--left'>
+                  <div class='price-list__column'><img class="price-list__img" src="img/2.jpg" width="" height=""></div>
+                  <div class="price-list__column">
+                     <div class='price-list__row'>
+                        <dt>Окрашивание хной</dt>
+                        <dd>1000р р.</dd>
+                     </div>
+                     <div class='price-list__row'>
+                        <dt>Счастье для бровей</dt>
+                        <dd>1000 р.</dd>
+                     </div>
+                     <div class='price-list__row'>
+                        <dt>Долговременная укладка</dt>
+                        <dd>200 р.</dd>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <div class="container--dark">
+               <section id='promo' class='project-block project _section'>
+                  <p class="project__headline headline">Примеры работ</p>
+                  <h2 class="project__title title">До и после</h2>
+                  <div class="project__wrapper">
+                  <input type="radio" name="point" id="slide_1" checked>
+                  <input type="radio" name="point" id="slide_2">
+                  <input type="radio" name="point" id="slide_3">
+                  <input type="radio" name="point" id="slide_4">
+                  <input type="radio" name="point" id="slide_5">
+                  <div class="slider">
+                     <div class="slides slide_1" style="background-image: url(img/slide.jpg)"></div>
+                     <div class="slides slide_2" style="background-image: url(img/slide_1.jpg)"></div>
+                     <div class="slides slide_3" style="background-image: url(img/slide_2.jpg)"></div>
+                     <div class="slides slide_4" style="background-image: url(img/slide_3.jpg)"></div>
+                     <div class="slides slide_5" style="background-image: url(img/slide_1.jpg)"></div> 
+                  </div>
+                  <div class="controls">
+                     <label for="slide_1"></label>
+                     <label for="slide_2"></label>
+                     <label for="slide_3"></label>
+                     <label for="slide_4"></label>
+                     <label for="slide_5"></label>
+                  </div>
+               </section>
+         </div>
+         <div class='container--light'>
+            <section id='discount' class='promo  _section'>
+               <div class="promo__column">
+                  <p class='promo__headliner headline'>Скидочный купон</p>
+                  <h3 class='promo__title title'>Дарим 25% скидку на нашу самую популярную услугу</h3> 
+                  <p class='promo__desc'>Заполни форму  получи скидку на первую процедуру</p>
+                  <div class='promo__wrapper '>
+                     <p class='promo__offer'>Позвони нам: <br> +7 929-216-93-03</p>
+                     <div class="promo__sale">
+                        <p class='sale__text'>Скидочный купон</p>
+                        <p class="sale__discount">25%</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="promo__column">
+                  <form class='promo__form'>
+                     <input type='text' name='Имя' placeholder='Ваше имя' required tabindex="1">
+                     <input type='text' name='Эл.почта' placeholder='Адрес эл. почты' tabindex="2">
+                     <input type='text' name='Номер телефона' placeholder='Номер телефона' required tabindex="3">
+                     <input type="date" name='Дата записи' placeholder='Дата записи' required tabindex="4">
+                     <textarea rows='5' name='Дополнительно' tabindex="5">Дополнительная информация</textarea> 
+                     <input class='button button--small' type="submit" name='Отправить' value='Записаться'>
+                  </form>
+               </div>
+            </section>
+         </div>
+      </main>
+      <footer class='main__footer footer _section'>
+         <!-- @include "../blocks/social.html" -->
+         <ul class='footer__nav footer-nav'>
+            <li class='footer-nav__item'><a class='footer-nav__link link' href='#main'>На главную</li>
+            <li class='footer-nav__item'><a class='footer-nav__link link' href='#servises'>Услуги и цены</li>
+            <li class='footer-nav__item'><a class='footer-nav__link link' href='#promo'>Примеры работ</li>
+            <li class='footer-nav__item'><a class='footer-nav__link link' href='#discount'>Скидочный купон</li>
+            <li class='footer-nav__item'><a class='footer-nav__link link' href='#record'>Онлайн-запись</li>
+         </ul>
+         <!-- @include "../blocks/copyright.html" -->
+      </footer>
+   </div>
+   <script src="js/js.js"></script>
+   </body>
+</html>

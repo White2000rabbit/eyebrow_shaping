@@ -1,0 +1,90 @@
+const isMobile = {
+   Android: function () {
+      return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+      return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+      return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+      return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+      return (
+              isMobile.Android()
+              || isMobile.BlackBerry()
+              || isMobile.iOS()
+              || isMobile.Opera()
+              || isMobile.Windows()
+              );
+  }
+};
+
+/*
+.burger-menu__arrow {
+   display:none;
+}
+.body._pc .burger-menu__arrow {
+   display: block;
+   width: 0;
+   height:0;
+   transition: transform 0.3s ease 0s;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 10px solid #FFF;
+}
+.body._pc .menu__list > li {
+   display: flex;
+   align-items: center;
+}
+.body._pc .menu__link {
+   flex: 1 1 auto;
+}
+.burger-menu {
+         position:absolute;
+         top:100%;
+         right:50%;
+         background-color: #1d6a77;
+         color: #FFF;
+         padding: 15px;
+         min-width:200px;
+}
+.burger__list li {
+         padding: 0px 0px 15px 0px;
+}
+.burger__list li:not(:last-child) {
+         margin: 0
+      }
+
+      .burger__list {
+      }
+      .burger__item {
+      }
+      .burger__link {
+      }
+      .menu__link {
+      }
+@media (min-width:1024px) {
+   .burger-menu {
+      transform:translate(0, 10%);
+      opacity:0;
+      visibility: hidden;
+      transition:  all 0.3 ease 0;
+      pointer-events: none;
+   }
+   }
+.body._pc .menu__list > li:hover .burger-menu {
+   opacity: 1;
+   visibility: visible;
+   pointer-events:  all;
+   transform: translate(0px 0px);
+}
+.menu__item:last-child {
+   margin-right: 20px;
+}
+*/
