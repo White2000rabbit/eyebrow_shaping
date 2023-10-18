@@ -69,15 +69,24 @@ img {
 }
 /*-----------------------Анимации-------------------------------*/
 ._animation {
-   opacity: 0;
-   transform: translate(0px, -200px);
-   transition: all 1s ease-out;
+   
 }
 ._active {
-   opacity: 1;
-   transform: translate(0px, 0px);
-   transition: all 1s ease-out;
+   animation: animation 0.9s;
 } 
+@keyframes animation {
+   from {
+		transform: translateX(-150%);
+		transform: translateY(-150%);
+      opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		transform: translateY(0px);
+      opacity: 1;
+	}
+
+}
 /*------------------------КНОПКИ--------------------------------*/
 .button {
    text-align: center;
@@ -148,7 +157,22 @@ img {
    color:#141414;
    animation: infinite bounce 3s;
 }
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
 
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
 .contact__link {
    color:#141414;
 }

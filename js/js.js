@@ -2,8 +2,7 @@
 //Анимация 
 const animItems = document.querySelectorAll('._animation');
 if (animItems.length > 0) {
-   window.addEventListener('scroll, animOnScrool');
-
+   window.addEventListener('scroll', animOnScroll);
    function animOnScroll () {
       for (let i=0; i < animItems.length; i++) {
          const animItem = animItems[i];
@@ -28,7 +27,8 @@ function offset(el) {
       scrollTop = window.pageYOffset || document.documentElement.scrollTop;
    return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
 }
-animOnScroll();
+setTimeout(animOnScroll(), 3)
+
 }
 
 
