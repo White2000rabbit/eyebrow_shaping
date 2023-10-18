@@ -67,7 +67,17 @@ img {
    width: 100%;
    height:100%;
 }
-
+/*-----------------------Анимации-------------------------------*/
+._animation {
+   opacity: 0;
+   transform: translate(0px, -200px);
+   transition: all 1s ease-out;
+}
+._active {
+   opacity: 1;
+   transform: translate(0px, 0px);
+   transition: all 1s ease-out;
+} 
 /*------------------------КНОПКИ--------------------------------*/
 .button {
    text-align: center;
@@ -76,6 +86,7 @@ img {
    border: 2px solid #5C8692;
    background: #5C8692;
    color:#FFF;
+   min-height: 40px;
 }
 .button--large {
    font-size: 1rem;
@@ -141,23 +152,6 @@ img {
 .contact__link {
    color:#141414;
 }
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	80% {
-		transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-}
-
 /*------------------------MENU---------------------*/
 .menu {
    display: flex;
@@ -316,8 +310,7 @@ img {
    z-index: 10;
    color:#000000;
    font-weight: 500;
-}
-
+} 
 
 .offer-text__headline {
    font-size: 1rem;
@@ -364,7 +357,7 @@ img {
 .blog__article {
    min-width: 33.3%;
    padding:20px;
-   
+   animation: transform-top 2s 0.1s;
 }
 
 @media (max-width:1024px) {
@@ -450,6 +443,7 @@ img {
    column-gap: 40px;
    
    margin-top: 6rem;
+   animation: transform-left 2s 0.1s;
 }
 .banner__item {
    width: 25%;
@@ -495,6 +489,7 @@ img {
 
 .price-list {
 	margin-top:1.4em;
+   animation: transform-top 2s 0.1s;
 }
 
 .price-list__column {
@@ -623,6 +618,7 @@ img {
    width:100%;
    gap:30px;
    justify-content: center;
+   animation: transform-left 2s 0.1s;
 }
 .promo__column {
    width:40%;
@@ -695,6 +691,15 @@ img {
    background-color: #FFF;
    box-shadow: 1px 0px 18px 0px rgba(0, 0, 0, 0.20);
 }
+.form__input:active {
+   border: solid 15px green;
+}
+.form__input:invalid:not(:placeholder-shown) {
+   border: solid 2px red;
+}
+.form__input:valid:not(:placeholder-shown)  {
+   border-color: solid 4px rgb(16, 129, 16);
+}
 .promo__form  input:not([name='Отправить']){
    border: 2px solid #5C8692;
    background: #FFF;
@@ -709,7 +714,11 @@ img {
    font-family: inherit;
    padding: 5px;
 }
-
+.form__checkbox {
+   display: flex;
+   justify-content: flex-start;
+   gap:20px;
+}
 /*=============footer==================*/
 .footer {
    background-color: #436068;

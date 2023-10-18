@@ -66,7 +66,7 @@
                   </div>
                   <div class="offer__column offer-text">
                      <p class='offer-text__headline headline'>Добро пожаловать в нашу студию!</p>
-                     <h2 class='offer-text__title title'>Не знаете, какую процедуру выбрать?</h2>
+                     <h2 class='offer-text__title title _animation _active'>Не знаете, какую процедуру выбрать?</h2>
                      <p class='offer-text__desc offer-description'>На нашем сайте вы сможете подобать себе подходящую процедуру для бровей и записаться онлайн. Также вы найдете короткие чек-листы по каждой из процедур, полезные материалы о домашнем уходе. Все, чтобы иметь неотразимые бровки</p>
                      <a class='offer-text__button button button--small' href='#'>Запись онлайн</a>
                   </div>            
@@ -215,13 +215,17 @@
                      </div>
                   </div>
                   <div class="promo__column">
-                     <form class='promo__form'>
-                        <input type='text' name='Имя' placeholder='Ваше имя' required tabindex="1">
-                        <input type='text' name='Эл.почта' placeholder='Адрес эл. почты' tabindex="2">
-                        <input type='text' name='Номер телефона' placeholder='Номер телефона' required tabindex="3">
-                        <input type="date" name='Дата записи' placeholder='Дата записи' required tabindex="4">
+                     <form action="#" class='promo__form form' id="form" >
+                        <input class='form__input' required type='text' name='Имя' placeholder='Ваше имя' tabindex="1">
+                        <input class='form__input' required type="tel" name="phone" placeholder="Телефон"  pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" minlength="10" maxlength="18">
+                        <input class='form__input' type='email' name='Эл.почта' placeholder='Адрес эл. почты' tabindex="3">
+                        <input class='form__input'  required type="text" name='Дата записи' placeholder='Дата записи' tabindex="4">
                         <textarea rows='5' name='Дополнительно' tabindex="5">Дополнительная информация</textarea> 
-                        <input class='button button--small' type="submit" name='Отправить' value='Записаться'>
+                        <div class="form__checkbox">
+                           <input type="checkbox" id="formAgreement" class="checkbox__input" checked>
+                           <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на рьработку персональных данных</span></label>
+                        </div>
+                        <button  class='button button--small form__button' type="submit" name='Отправить'>Записаться</button>
                      </form>
                   </div>
                </section>
