@@ -317,6 +317,8 @@ img {
    color:#000000;
    font-weight: 500;
 }
+
+
 .offer-text__headline {
    font-size: 1rem;
    color:#000000;
@@ -343,6 +345,7 @@ img {
    gap:20px;
    justify-content: center;
 }
+
 @media (max-width:1024px) {
    .blog {
       flex-wrap: wrap;
@@ -359,8 +362,11 @@ img {
    }
 }
 .blog__article {
-   width: 33.33%;
+   min-width: 33.3%;
+   padding:20px;
+   
 }
+
 @media (max-width:1024px) {
    .blog__article {
       width: 25%;
@@ -385,7 +391,6 @@ img {
    width:100%;
    margin-bottom:5px;
    height:200px;
-   overflow: hidden;
 }
 
 .article h3 {
@@ -394,7 +399,8 @@ img {
    font-weight: 700;
    line-height: 140%;
    letter-spacing: 0.312px;
-   margin-bottom:13px
+   margin-bottom:1rem;
+   height: 50px;
 }
 .article p {
    color: #0e0e0e;
@@ -404,6 +410,7 @@ img {
    letter-spacing: 0.36px;
    margin-bottom: 20px;
    width: 100%;
+   height: 100px;
    overflow: hidden;
 }
 @media (max-width:768px) {
@@ -419,47 +426,7 @@ img {
    font-weight: 600;
 }
 
-/*-----------------POP-UP-----------*/
-.modal {
-   position: fixed;
-   top: 0;
-   right: 0;
-   bottom:0;
-   left: 0;
-   z-index: 10; 
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   visibility: hidden;
-   opacity: 0;
-   background-color: rgba(12, 43, 61, 0.479);
-   transition-duration: 0.2s;
-   transition-property: opacity;
-   overflow-y: hidden;
-   pointer-events: none;
-}
-.modal-open {
-   pointer-events: auto;
-   visibility: visible;
-   opacity: 1;
-}
-.modal-close-button {
-   position: absolute;
-   top:0;
-   right:0;
-}
-.modal-box {
-   position: relative;
-   width: 80%;
-   height:80%;
-   max-height: calc(100vh - 60px);
-   background-color: #f4f7f9;
-   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.15);
-   border-radius: 8px;
-   overflow-y: auto;
-   overscroll-behavior: contain;
-   padding: 30px;
-}
+
 /*-----------------О НАС--------------=*/
 .banner {
    width: 100%;
@@ -522,6 +489,8 @@ img {
    background-color: #144d57;
    border: solid 1px #1d626e;
 }
+
+
 /*----------PRICE----------------------*/
 
 .price-list {
