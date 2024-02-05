@@ -4,18 +4,37 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="../../style.css"/>
+      <link rel="stylesheet" href="../../style-article.css"/>
       <link rel="preconnect" href="https://fonts.googleapis.com">
 	   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,600;0,700;0,800;1,400&family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
          <title>Оформление бровей</title>
       </head>
-   <body class="wrapper">
+   <body>
       <header class='header'>
+         <div class="header__container _container">
+            <div class="header__link"><a href='../../index.html'>На главную</a></div>
+            <div class="header__title"><h1>Новости</h1></div>
+         </div>
       </header>
-      <main>
+      <main class="wrapper">
+         <div class="wrapper__content content">
+            <h2 class="content__title">Домашний уход после процедур</h2>
+            <div class='content__text'>
+               <p>Скоро здесь будет статья, а пока можете подписаться на нашу рассылку</p>
+            </div>
+         </div>
+         <div class="wrapper__form">
+            <form class='form' method="post" action="" id="form-email">
+               <h3>Подпишитесь на новости</h3>
+               <label for="e-mail">Ваш e-mail:</label>
+               <input id="e-mail" required type='email' name='Эл.почта' placeholder=''></input>
+               <button  class='button form__button' type="submit" name='Отправить'>Подписаться</button>
+            </form>
+         </div>
       </main>
       <footer class='main__footer footer _section'>
       </footer>
-   <script src="js/js.js"></script>
+      <script src="../../js/js-article.js"></script>
    </body>
 </html>

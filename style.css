@@ -24,6 +24,7 @@ html, body {
 }
 .container {
    width:100%;
+   min-height: 100vh;
 }
 .container--dark {
    background-color:#EBF3F5;
@@ -685,7 +686,7 @@ img {
    font-size: 40px;
    padding: 15px;
 }
-.promo__form {
+.form {
    display: flex;
    flex-direction: column;
    padding: 70px 50px 65px 50px;
@@ -703,14 +704,14 @@ img {
 .form__input:valid:not(:placeholder-shown)  {
    border-color: solid 4px rgb(16, 129, 16);
 }
-.promo__form  input:not([name='Отправить']){
+.form  input:not([name='Отправить']){
    border: 2px solid #5C8692;
    background: #FFF;
    height: 50px;
    font-family: inherit;
    padding: 5px;
 }
-.promo__form textarea {
+.form textarea {
    border: 2px solid #5C8692;
    background: #FFF;
    height: 70px;
@@ -767,3 +768,11 @@ img {
    letter-spacing: 0.352px;
    vertical-align: bottom;
 }
+.using__copyright {
+   padding-top: 20px;
+   font-size: 10px;
+   color:#fff;
+}
+.using__copyright a {
+   color:#fff;
+  }

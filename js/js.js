@@ -18,9 +18,8 @@ menu.addEventListener('click', event => {
       console.log('Click!');
    }
 });
-//форма отправки 
-
-const form = document.querySelector('.form');
+//форма отправки запись 
+const form = document.querySelector('#form');
 const submit = form.querySelector('.form__button');
 submit.addEventListener('click', function (evt) {
       evt.preventDefault();
